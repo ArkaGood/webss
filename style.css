@@ -1,0 +1,306 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 10px;
+  }
+  body {
+    font-size: 1.6rem;
+    color: #ffecd2;
+    line-height: 1.5;
+    text-align: center;
+    background-color: #333;
+  }
+  .clearfix::after {
+   
+    content: "";
+    display: block;
+    clear: both;
+  }
+  a {
+    text-decoration: none;
+  }
+  p {
+    padding: 1.6rem 0;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  /*header*/
+  
+  header {
+    height: 45rem;
+  }
+  header .bg-image {
+    position: absolute; 
+    background-image: url(img/jim.jpg); 
+    height: 45rem; /*header da verilen değer ile aynı değer verildi. arka taraf gözükmesin*/
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1; /*image i arka tarafa atıyor.üstüne gelen yazılar belirginleşti.*/
+  }
+  header h1 {
+    padding: 11rem;
+    padding-bottom: 0; /*p h1 den uzaklaşmaması için yazıldı*/
+  }
+  .btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    border: 1px solid #666;
+    padding: 1.6rem 3.2rem;
+    margin: 0.5rem 0;
+    transition: all 0.3s;
+  }
+  .btn:hover {
+    background: #eaeaea;
+    color: #333;
+  }
+  /*section-a*/
+  
+  #section-a {
+    background-color: #ffecd2;
+    color: #333;
+    padding: 3.2rem 0;
+  }
+  
+  /*section-b*/
+  
+  #section-b {
+    padding: 2rem;
+  }
+  #section-b ul li {
+    list-style: none;
+  }
+  #section-b li {
+    background-color: #ffecd2 ;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  .col-content {
+    padding: 1.5rem;
+  }
+  
+  /*section-c*/
+  
+  #section-c {
+    background-color: #ffecd2;
+    color: #333;
+    padding: 5rem;
+  }
+  
+  /*section-d*/
+  #section-d .box {
+    padding: 5rem;
+  }
+  #section-d .box:first-child {
+    background-color: #2690d4;
+  }
+  
+  /*footer*/
+  footer {
+    background-color: #333;
+    padding: 4rem;
+  }
+  footer a {
+    color: #2690d4;
+  }
+  
+  /**/
+  @media screen and (min-width: 700px) {
+    #section-b li {
+      width: 45%;
+      margin: 1%;
+      display: inline-block;
+    }
+    .box {
+      width: 50%;
+      float: left;
+    }
+    html {
+      font-size: 12px;
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    #section-b li {
+      width: 29%;
+      margin: 1%;
+      display: inline-block;
+    }
+    .box {
+      width: 50%;
+      float: left;
+    }
+    html {
+      font-size: 14px;
+    }
+  }
+  .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 30vw;
+  margin: 0 auto;
+  min-height: 20vh;
+}
+.btn {
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #eee;
+  border-radius: 5px;
+ }
+
+
+.btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid #ffecd2;
+  border-radius: 0.6em;
+  color: #000;
+  
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1;
+  margin: 10px;
+  padding: 1.2em 2.8em;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.btn:hover, .btn:focus {
+  color: #fff;
+  outline: 0;
+}
+.second {
+  border-radius: 3em;
+  border-color: #1abc9c;
+  color: #fff;
+  background-image: linear-gradient(to right, rgba(26, 188, 156, 0.6), rgba(26, 188, 156, 0.6) 5%, #1abc9c 5%, #1abc9c 10%, rgba(26, 188, 156, 0.6) 10%, rgba(26, 188, 156, 0.6) 15%, #1abc9c 15%, #1abc9c 20%, rgba(26, 188, 156, 0.6) 20%, rgba(26, 188, 156, 0.6) 25%, #1abc9c 25%, #1abc9c 30%, rgba(26, 188, 156, 0.6) 30%, rgba(26, 188, 156, 0.6) 35%, #1abc9c 35%, #1abc9c 40%, rgba(26, 188, 156, 0.6) 40%, rgba(26, 188, 156, 0.6) 45%, #1abc9c 45%, #1abc9c 50%, rgba(26, 188, 156, 0.6) 50%, rgba(26, 188, 156, 0.6) 55%, #1abc9c 55%, #1abc9c 60%, rgba(26, 188, 156, 0.6) 60%, rgba(26, 188, 156, 0.6) 65%, #1abc9c 65%, #1abc9c 70%, rgba(26, 188, 156, 0.6) 70%, rgba(26, 188, 156, 0.6) 75%, #1abc9c 75%, #1abc9c 80%, rgba(26, 188, 156, 0.6) 80%, rgba(26, 188, 156, 0.6) 85%, #1abc9c 85%, #1abc9c 90%, rgba(26, 188, 156, 0.6) 90%, rgba(26, 188, 156, 0.6) 95%, #1abc9c 95%, #1abc9c 100%);
+  background-position: 0 0;
+  background-size: 100%;
+  transition: background 300ms ease-in-out;
+}
+.second:hover {
+  background-position: 100px;
+}
+
+.btn-5 {
+  background-image: linear-gradient(to right, #0000 0%, #0000 51%, #000 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #4d4d4d;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #ffecd2;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: center;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #ffecd2;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
